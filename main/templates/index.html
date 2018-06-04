@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>한양대학교 양자암호 동아리-QCC</title>
+    <meta name="description" content="한양대학교 ERICA 양자 암호 연구 동아리.">
+    <meta name="Keywords" content="QCC, 양자암호">
+    <meta charset="utf-8">
+        {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'board/css.css' %}">
+</head>
+<body class="wrap">
+    <div class="about">
+    <!---메뉴--->
+        <div class="header_default">
+            <div class="header_left">
+                <span style="font-size: 1.5em; font-family: cursive"><span>Q</span><span>C</span><span>C</span></span>
+                <a class="header_box" href="{% url 'index' %}">ABOUT</a>
+                <a class="header_box" href="{% url 'plan' %}">연간계획</a>
+                <a class="header_box" href="{% url 'activity' %}">활동</a>
+                <a class="header_box" href="{% url 'home' %}">Library</a>
+            </div>
+            <div class="header_right">
+                <button type="button" class="header_btn" onclick="location.href = ''">지원안내</button>
+                <button type="button" class="header_btn" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfDnLkl3FfMZFS3jvXvlMc8g9_TKlNWOc-HRwJATNQdactQ3A/viewform?usp=sf_link')">지원하기</button>
+            </div>
+        </div>
+    <!---내용--->
+        <section class="container">
+            <div id="main_intro" class="spot" style="background-image: url('/static/board/image/secu.jpg');
+    ">>
+                <h1 id="Name">Quantum<br>Cryptography<br>Club</h1>
+                <p id="explain">QCC는 한양대학교 ERICA의 양자 암호 동아리입니다.</p>
+                <p id="explain">양자 암호 연구에 관심있는 학부생은 모두 환영입니다.</p>
+                <button type="button" class="button" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfDnLkl3FfMZFS3jvXvlMc8g9_TKlNWOc-HRwJATNQdactQ3A/viewform?usp=sf_link')">지원하러가기</button>
+                <a href="#we-do"><div class="triangle"></div></a>
+            </div>
+            <a name="we-do"></a>
+            <div class="sct_de">
+                <div class="abt_sc1">
+                    <h1 class="title">하는 일</h1>
+                    <p class="text">미래 암호로 기대되는 양자 암호와 현대 암호를 위협하는 양자 알고리즘의 실제 응용 연구</p>
+                </div>
+                <div class="abt_sc2">
+                    <h1 class="title">위치</h1>
+                    <p class="text">제 1 과학기술관 5층 조교 준비실</p>
+                </div>
+                <div class="abt_sc3">
+                    <h1 class="title">지도교수님</h1>
+                    <p class="text">과학기술대학 응용수학과 배준우교수님</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

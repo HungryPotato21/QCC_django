@@ -1,0 +1,282 @@
+html,body{
+    margin: 0;
+}
+body {
+    height: auto;
+    min-height: 100%;
+    padding-bottom: 80px; /* footer height */
+    position: relative;
+}
+.about {
+    margin: inherit;
+}
+/**************************************************/
+/*******************Headr Layout*******************/
+/*****Header 영역***********************************/
+.about > div {
+    width: 100%; height: 80px;
+    position: fixed;
+    border: 3px solid pink;
+}
+.header_default > div{
+    display: flex;
+    margin-top: 20px;
+    border: 2px solid green;
+}
+/**********Header 메뉴 구조*************************/
+/*****메뉴 영역*****/
+.header_left {
+    float : left;
+    align-items: center;
+    margin-left: 10vw;
+    font-size: 1.1rem;
+}
+/*****버튼 영역*****/
+.header_right {
+    float : right;
+    vertical-align: middle;
+    width: 30vw;
+    margin-right: 10vw;
+}
+/*********Header 메뉴 layout********/
+/*****메뉴 모양*****/
+.header_left .header_box {
+    margin-left: 2vw;
+    text-decoration: none;
+}
+/*****버튼 모양*****/
+.header_right .header_btn {
+    padding: 6px;
+    transition-duration: 0.4s;
+    font-size: 1.1rem;
+}
+.header_right .header_btn:first-child {
+    border-radius: 5px 0 0 5px;
+}
+.header_right .header_btn:last-child {
+    border-radius: 0 5px 5px 0;
+}
+/**********Header 종류*****************************/
+/**********header_default***************/
+.header_default a {
+    color: white;
+}
+.header_default button {
+    background-color: transparent;
+    border: 2px solid whitesmoke;
+    color: whitesmoke;
+}
+.header_default button:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+/*************************************************/
+
+/*******************Body Layout*******************/
+/*****Container 영역*******************************/
+/**********대문 구조 및 배경********************/
+.spot {
+    padding: 80px 7vw 30px;
+    background-image: url('/static/board/image/secu.jpg');
+    background-size: 100% 100%;
+    height: 100vh;
+    min-height: calc(80px + 10vh + 20em);
+}
+/**********대문 글자**********/
+/*****대문 글자 style*****/
+.spot > h1{
+    margin-top: 10vh;
+    font-size: 3em;
+    color: white;
+}
+.spot > p{
+    font-size: 1.5em;
+    line-height: 0.5rem;
+    color: aliceblue;
+}
+/**********대문 요소**********/
+/*****대문 버튼*****/
+.spot button {
+    transition-duration: 0.4s;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid white;
+    font-size: 1.1em;
+    margin-top: 1em;
+    width: 12em; height: 2em;
+    letter-spacing: 0.2em;
+}
+.spot button:hover {
+    background-color: white;
+    color: black;
+}
+/*****대문 내림 버튼*****/
+.triangle {
+    position: sticky;
+    margin: auto;
+    width: 0;  height: 0;
+    border-top: 2vh solid white;
+    border-right: 5vh solid transparent;
+    border-bottom: 0vh solid transparent;
+    border-left: 5vh solid transparent;
+}
+/********************************************/
+
+/**********머릿말 layout***************/
+.path_de {
+    position: static;
+    height: 3em; width: 100%;
+    min-height: 3em;
+    background-color: rgb(0, 20, 50);
+    padding: 80px 7vw;
+    overflow: hidden;
+}
+span:first-of-type{
+    color: rgb(245 180 130);
+}
+span:nth-last-of-type(2){
+    color: rgb(225 220 100);
+}
+span:last-of-type{
+    color: rgb(170 210 140);
+}
+/**********머릿말 글자**********/
+.path_de .title {
+    float: left;
+    font-size: 1.5em;
+    color: aliceblue;
+    padding-right: 5vw;
+    border-right: 2px solid white;
+    margin-right: 5vw;
+}
+.path_de .title_sub {
+    float: left;
+    font-size: 2em;
+    color: aliceblue;
+}
+/*************************************/
+
+/**********섹션 layout***************/
+/**********섹션 테마**********/
+/*****섹션 배경색**********/
+.sct_de {
+    background-color: white;
+    padding: 5vh 7vw;
+}
+.sct_db {
+    background-color: #1A2933;
+    padding: 5vh 7vw;
+}
+.sct_gy {
+    background-color: gainsboro;
+    padding: 5vh 7vw;
+}
+/*****섹션 글자 style*****/
+/*****섹션_테마1*****/
+.sct_de .title {
+    font-size: 2em;
+    color: midnightblue;
+}
+.sct_de .text {
+    color : rgb(5 15 45);
+}
+/*****섹션_테마2*****/
+.sct_db .title {
+    font-size: 2em;
+    color: white;
+}
+.sct_db .text {
+    color : aliceblue;
+}
+/*****섹션_테마3*****/
+.sct_gy .title {
+    font-size: 2em;
+    color: rgb(5 15 45);
+}
+.sct_gy .text {
+    color : rgb(5 15 45);
+}
+/***************************/
+
+/******************************************************수정 가능 영역*****************************************************/
+/*html
+<div class="{섹션 테마}">
+    <div class="{페이지_섹션#}"><h2 class="title">{섹션 제목}</h2>
+        <div class="text">
+        /*      팔레트를 필요한 만큼 복제하세요       *//*
+            <div id="{페이지_섹션_팔레트#}" class="pallete">
+                <div class="pallete_title">
+                /***팔레트 제목입니다.***//*
+                </div>
+                <div class="pallete_explain">
+                /***팔레트 설명입니다.***//*
+                </div>
+            </div>
+        /**//*
+        </div>
+    </div>
+</div>
+*/
+/*****팔레트의 배치를 바꾸려면 상위 섹션 class를 이용하세요*****/
+/**********.(페이지)_(섹션#) .pallete <--grid 이용 **********/
+
+/*****Activity*****/
+.act_sc2 .pallete_explain {
+    border: 1px solid red;
+    max-height: 0em;
+    overflow: hidden;
+    transition: 2s max-height 0.5s;
+}
+.act_sc2 .pallete:hover .pallete_explain {
+    max-height: 20em;
+}
+.act_sc2 .pallete_title{
+    background:#1AAB8A;
+    color:white;
+    border-radius: 0 50px 0;
+    height:3em;
+    padding:10px 2em;
+    transition:1s;
+}
+.act_sc2 .pallete_title:hover{
+  background:white;
+  color:#1AAB8A;
+}
+/*****Plan*****/
+
+/*****request*****/
+.sct_de .col {
+    position: relative;
+    text-align: center;
+    line-height:1.5em;
+    width: 30%;
+    padding: 15px;
+    float: left;
+    display: block;
+}
+.sct_de .col li{
+    text-align: left;
+    font-size: 1.5em;
+}
+/****팔레트 내부 style 디자인을 적용하려면 id를 이용해 바꾸세요****/
+/***************(페이지)_(섹션#)_(팔레트#)********************/
+/*****Activiy*****/
+#act_sc1_pallete1 {
+    margin-left: 5em;
+    line-height: 1em;
+    font-size: 1.2em;
+}
+#act_sc2_pallete1, #act_sc2_pallete2 {
+    margin: 1.3em 3em;
+    color: azure;
+    font-size: 1.2em;    
+}
+#act_sc2_pallete1 p, #act_sc2_pallete2 p {
+    font-size: 1.3em; width: 70vw;
+    display: table-cell; vertical-align: middle;
+}
+#act_sc3_pallete1 ul {
+    padding: 5px 5em;
+    line-height: 2em;
+}

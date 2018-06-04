@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>한양대학교 양자암호 동아리-QCC</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css.css">
+</head>
+<body class="wrap">
+    <div class="about">
+    <!---메뉴--->
+        <div class="header_default">
+            <div class="header_left">
+                <span style="font-size: 1.5em; font-family: cursive"><span>Q</span><span>C</span><span>C</span></span>
+                <a class="header_box" href="{% url 'home' %}">ABOUT</a>
+                <a class="header_box" href="./plan.html">연간계획</a>
+                <a class="header_box" href="{% url 'activity' %}">활동</a>
+                <a class="header_box" class="library">Library</a>
+            </div>
+            <div class="header_right">
+                <button type="button" class="header_btn" onclick="window.open('./request.html')">지원안내</button>
+                <button type="button" class="header_btn" onclick="window.open('https://google.com/')">지원하기</button>
+            </div>
+        </div>
+    <!---내용--->
+        <section class="container">
+            <div class="path_de">
+                <h1 class="title"><span>Q</span>uantum<br><span>C</span>rytography<br><span>C</span>lub</h1>
+                <h2 class="title_sub">QCC의 활동 소개</h2>
+            </div>
+            <div class="sct_de">
+                <div class="act_sc1"><h2 class="title">정기 모임</h2>
+                    <div class="text">
+                        <div id="act_sc1_pallete1" class="pallete">
+                            <div class="pallete_explain">
+                                <p>매주 월요일 오후 4시</p>
+                                <p>조사 및 연구내용 정리 및 수집하여 동아리 내에서 발표 및 공유</p>
+                                <p>과학기술대학 응용수학과 배준우 교수님 주관</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sct_db">
+                <div class="act_sc2"><h2 class="title">활동 내용</h2>
+                    <div class="text">
+                        <div id="act_sc2_pallete1" class="pallete">
+                            <p class="pallete_title">양자 난수발생 프로토콜 및 보안성에 관한 이해</p>
+                            <ul class="pallete_explain">
+                                <li>Bell's Indequality를 이용하여 device 사이의 Non-locality 조사</li>
+                                <li>No-Signal, Quantum, Local인 경우에 대하여 확률분포 조사</li>
+                                <li>Device가 n개인 경우로 일반적인 확장 및 양자 확률분포 조사</li>
+                                <li>Randomness의 의미와 RNG(Random Number Generator)의 종류 조사</li>
+                                <li>Weak randomness인 Satha-Vazirani와 Min-Entropy조사</li>
+                                <li>Randomness Expansion 조사</li>
+                            </ul>
+                        </div>
+                        <div id="act_sc2_pallete2" class="pallete">
+                            <p class="pallete_title">양자 알고리즘의 실제 구현에서 실효성 검증</p>
+                            <ul class="pallete_explain">
+                                <li>Deutsch-Jozsa Problem에서 measurement의 오류로 인한 unknown function 검출의 실효성 검증</li>
+                                <li>오류가 존재할 경우, Classical problem과 Quantum problem의 확률분포 및 연산속도 비교</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sct_gy">
+                <div class="act_sc3"><h2 class="title">2018 계획</h2>
+                    <div class="text">
+                        <div id="act_sc3_pallete1" class="pallete">
+                            <ul class="pallete_explain">
+                                <li>퀀텀 정보통신 연구조합(Qunion)</li>
+                                <li>한국 암호 포럼(KCF)</li>
+                                <li>한국 광 학회(OSK)</li>
+                                <li>삼성 휴먼테크 논문 대상</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!--바닥-->
+        <footer>
+        </footer>
+    </div>
+</body>
+</html>
